@@ -24,17 +24,28 @@ section {
     margin-bottom: 60px;
   }
 
+  p:hover {
+  }
+
   button {
     background-color: $very-light-gray;
 
     border: 2px solid $very-light-gray;
     border-radius: 30px;
 
-    color: transparent;
-
     padding: 12px 40px;
 
     font-weight: 700;
+
+    transition: all 0.5s ease-in-out;
+
+    cursor: pointer;
+
+    &:hover {
+      color: $very-light-gray !important;
+
+      background-color: transparent;
+    }
   }
 }
 
@@ -45,5 +56,40 @@ section {
 
       line-height: 25px;
     }
+  }
+}
+
+@for $i from 1 through 3 {
+  section:nth-child(#{$i}) {
+    animation: sect-anim 1s ease-in-out #{calc($i/2) + 0.5}s both;
+    z-index: -#{$i};
+  }
+}
+
+@keyframes sect-anim {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@for $i from 1 through 12 {
+  * .anim:nth-child(#{$i}) {
+    animation: text-anim 1s ease-in-out #{calc($i/2) + 1}s both;
+  }
+}
+
+@keyframes text-anim {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }

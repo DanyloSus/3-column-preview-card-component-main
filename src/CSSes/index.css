@@ -69,14 +69,102 @@ section button {
   background-color: hsl(0, 0%, 95%);
   border: 2px solid hsl(0, 0%, 95%);
   border-radius: 30px;
-  color: transparent;
   padding: 12px 40px;
   font-weight: 700;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+section button:hover {
+  color: hsl(0, 0%, 95%) !important;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 1000px) {
   section p {
     margin-bottom: 0px;
     line-height: 25px;
+  }
+}
+section:nth-child(1) {
+  animation: sect-anim 1s ease-in-out 1s both;
+  z-index: -1;
+}
+
+section:nth-child(2) {
+  animation: sect-anim 1s ease-in-out 1.5s both;
+  z-index: -2;
+}
+
+section:nth-child(3) {
+  animation: sect-anim 1s ease-in-out 2s both;
+  z-index: -3;
+}
+
+@keyframes sect-anim {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+* .anim:nth-child(1) {
+  animation: text-anim 1s ease-in-out 1.5s both;
+}
+
+* .anim:nth-child(2) {
+  animation: text-anim 1s ease-in-out 2s both;
+}
+
+* .anim:nth-child(3) {
+  animation: text-anim 1s ease-in-out 2.5s both;
+}
+
+* .anim:nth-child(4) {
+  animation: text-anim 1s ease-in-out 3s both;
+}
+
+* .anim:nth-child(5) {
+  animation: text-anim 1s ease-in-out 3.5s both;
+}
+
+* .anim:nth-child(6) {
+  animation: text-anim 1s ease-in-out 4s both;
+}
+
+* .anim:nth-child(7) {
+  animation: text-anim 1s ease-in-out 4.5s both;
+}
+
+* .anim:nth-child(8) {
+  animation: text-anim 1s ease-in-out 5s both;
+}
+
+* .anim:nth-child(9) {
+  animation: text-anim 1s ease-in-out 5.5s both;
+}
+
+* .anim:nth-child(10) {
+  animation: text-anim 1s ease-in-out 6s both;
+}
+
+* .anim:nth-child(11) {
+  animation: text-anim 1s ease-in-out 6.5s both;
+}
+
+* .anim:nth-child(12) {
+  animation: text-anim 1s ease-in-out 7s both;
+}
+
+@keyframes text-anim {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }/*# sourceMappingURL=index.css.map */
