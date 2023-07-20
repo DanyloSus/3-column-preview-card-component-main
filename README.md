@@ -2,6 +2,6 @@
 
 from *www.frontendmentor.io*
 
-- [ ] Desktop design
+- [x] Desktop design
 - [ ] Relative
 - [ ] Animations
