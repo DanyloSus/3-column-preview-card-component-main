@@ -3,5 +3,5 @@
 from *www.frontendmentor.io*
 
 - [x] Desktop design
-- [ ] Relative
+- [x] Relative
 - [ ] Animations

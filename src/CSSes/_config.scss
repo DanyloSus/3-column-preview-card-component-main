@@ -46,6 +46,15 @@ main {
   overflow-x: hidden;
 }
 
+@media screen and (max-width: 1000px) {
+  main {
+    flex-direction: column;
+
+    width: $mobile-width;
+    height: $mobile-height;
+  }
+}
+
 h1,
 h2,
 h3,
